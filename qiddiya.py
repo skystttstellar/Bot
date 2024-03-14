@@ -9,11 +9,11 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('sheet-parse-417019-e0b
 client = gspread.authorize(creds)
 
 # Open the Google Spreadsheet (replace 'Your Spreadsheet Name' with your actual spreadsheet name)
-spreadsheet = client.open('Marriott')
+spreadsheet = client.open('Qiddiya')
 sheet = spreadsheet.sheet1
 
 server = Server(horizon_url="https://horizon.stellar.org")
-account_id = "GDGFNU76CULDZUDTPIAN6Z2XTHL2ISETUHQJLH75B4EPSPRK4WP2XRBI"
+account_id = "GDJZ2BS6NADR75LAEK2TCTUIW3C5DULUNCDUHR75EUUTYJLFES5DEZBD"
 
 def balance_handler(account_response):
     balance = account_response["balances"][3]  # Assuming XLM is the first asset in the list
