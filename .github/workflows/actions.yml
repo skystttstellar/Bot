@@ -24,4 +24,4 @@ jobs:
 
     - name: Run Python script
       run: |
-        python marriott.py > status.log
+        python qiddiya.py > status.log
