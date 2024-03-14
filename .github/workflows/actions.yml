@@ -2,7 +2,7 @@ name: Run Stellar Script Every 5 Minutes
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Runs the script every 10 minutes
+    - cron: '*/1 * * * *' # Runs the script every 5 minutes
 
 jobs:
   run_script:
