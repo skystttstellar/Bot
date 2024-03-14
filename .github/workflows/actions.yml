@@ -23,4 +23,5 @@ jobs:
         pip install stellar-sdk gspread oauth2client
 
     - name: Run Python script
-      run: python marriott.py
+      run: |
+        python marriott.py > status.log
