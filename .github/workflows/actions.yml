@@ -24,4 +24,4 @@ jobs:
 
     - name: Run Python script
       run: |
-        python qiddiya.py > status.log
+        python main.py > status.log
