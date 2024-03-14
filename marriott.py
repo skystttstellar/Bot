@@ -26,9 +26,3 @@ def balance_handler(account_response):
 # Fetch initial account balance
 account = server.accounts().account_id(account_id).call()
 balance_handler(account)
-
-# Stream for changes in account balance
-for effect in server.effects().for_account(account_id).stream():
-    if effect["type"] == "account_debited" or effect["type"] == "account_credited":
-        account = server.accounts().account_id(account_id).call()
-        balance_handler(account)
